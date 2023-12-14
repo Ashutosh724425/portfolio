@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/d9e17a1733.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav class="nav">
+          <img class="logo" src="mainlogo.png" alt="" />
+          <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">projects</a></li>
+            <li><a href="#contact">contact</a></li>
+            <i class="fa-solid fa-xmark" onclick="closemenu()"></i> 
+          </ul>
+          <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+          <p>PHP Full Stack Developer</p>
+          <h1>
+            Hi, i'm <span>Ashutosh</span><br />
+            from lucknow
+          </h1>
+        </div>
+      </div>
+    </div>
+    <!-- ------------about------------ -->
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="about.jpg"/>
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1><br>
+            <p>Hi, I'm Ashutosh, a full-stack developer at Janki Web Infotech in Lucknow. </p>
+              <p> I have a strong passion for coding and crafting responsive websites using PHP, HTML, CSS, Bootstrap, and JavaScript.</p>
+              <p>I completed my BCA and am currently pursuing MCA with an expected graduation in 2024. I enjoy solving complex problems and look forward to connecting with fellow enthusiasts in the field.</p>
+              
+            
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('skills')">
+                Skills
+              </p>
+              <p class="tab-links" onclick="opentab('Experience')">
+                Experience
+              </p>
+              <p class="tab-links" onclick="opentab('Education')">Education</p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li><span>Languages</span><br /><br> Java, Python, C</li>
+                <li><span>Web Technologies</span><br /><br>HTML, CSS, JavaScript, PHP, Bootstrap</li>
+                <li><span>Database Management</span><br /><br>MySQL</li>
+                <li><span>Tools</span><br /><br>Git</li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="Experience">
+              <ul>
+                <li>
+                  <span>Janki Web Infotech (Lucknow) - July 2023 - Cuurent</span></li>
+                  <li>
+                     -> Developed and maintained responsive websites using HTML, CSS, and JavaScript.
+                  </li>
+                  <br>
+                  <li>-> Resolved complex technical issues, ensuring seamless functionality across browsers and devices.</li><br>
+                  <li>-> Executed the development of web applications, meeting specific client requirements.</li>
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="Education">
+              <ul>
+                <li><span>B.C.A (BBDU, Lucknow) - 2022</span><br><br>CGPA: 7.29</li>
+                <li><span>M.C.A. (BBDU, Lucknow) - 2024</span><br><br> SGPA: 8.15 (First Year)</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="services">
+      <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+          <div>
+            <i class="fa-solid fa-code"></i>
+            <h2>Fontend Design</h2>
+            <p>
+              Crafting visually stunning and user-friendly interfaces is my forte. I specialize in utilizing technologies like HTML, CSS, Bootstrap, and JavaScript to ensure an exceptional and seamless user experience on the frontend.
+
+            </p>
+            <a href="#">Learn more</a>
+          </div>
+          <div>
+            <i class="fa-solid fa-database"></i>
+            <h2>DBMS</h2>
+
+            <p>
+              Navigating the intricacies of data is my expertise. Proficient in MySQL, I skillfully manage databases, ensuring data integrity and seamless retrieval. My expertise in database systems contributes to the robust foundation that powers the backend of applications.
+            </p>
+            <a href="#">Learn more</a>
+          </div>
+          <div>
+            <i class="fa-solid fa-file-code"></i>
+            <h2>PHP Backend</h2>
+
+            <p>
+              Driving the functionality behind the scenes, my backend development skills bring life to applications. With a strong command of PHP and MySQL, I create the logic and structure that make applications dynamic, efficient, and responsive.
+            </p>
+            <a href="#">Learn more</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="portfolio">
+      <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <h2></h2>
+        <div class="work-list">
+          <div class="work">
+            <img src="mybank.png" alt="">
+            <div class="layer">
+              <h3>My Bank</h3>
+              <p>Currently crafting a sleek banking website just to enhance my technical skills. Stay tuned for updates</p>
+              <a href="#"><i class="fa-solid fa-link"></i></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="myit.png" alt="">
+            <div class="layer">
+              <h3>IT Company Website</h3>
+              <p>Crafted dynamic IT solutions with PHP expertise, our web development services bring your digital vision to life, ensuring a robust and scalable online presence for your business.</p>
+              <a href="#"><i class="fa-solid fa-link"></i></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="travel.png" alt="">
+            <div class="layer">
+              <h3>Travel Management System</h3>
+              <p> Developed a web-based travel management system that allows users to book tour
+                packages, streamlining the travel booking process.</p>
+              <a href="#"><i class="fa-solid fa-link"></i></a>
+            </div>
+          </div>
+        </div>
+        <a href="#" class="btn"> See more</a>
+      </div>
+    </div>
+
+
+  <!-- ------------contact------------ -->
+  <div id="contact">
+    <div class="container">
+      <div class="row">
+        <div class="contact-left">
+          <h1 class="sub-title">Contact Me</h1>
+          <p><i class="fa-solid fa-envelope"></i>ashutosh724425@gmail.com</p>
+          <p><i class="fa-solid fa-phone"></i>+91 9169971149</p>
+          <div class="social-icons">
+            <a href="https://www.facebook.com/profile.php?id=100023896667152&mibextid=ZbWKwL"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://www.instagram.com/ashutosh__dubey_?igshid=OGQ5ZDc2ODk2ZA=="><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/ashutosh-dubey-78111225b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fa-brands fa-linkedin"></i></a>
+            <a href=""><i class="fa-brands fa-x"></i></a>
+          </div>
+          <a href="AshutoshCV.pdf" class="btn btn2">Download CV</a>
+        </div>
+        <div class="contact-right">
+          <form name="submit-to-google-sheet">
+            <input type="text" name="Name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="Message" id="" placeholder="Your Message" rows="6"></textarea>
+            <button type="submit" class="btn btn2">Submit</button>
+          </form>
+          <span id="msg"></span>
+        </div>
+      </div>
+    </div>
+    <div class="copyright">
+      <p>copyright @ Developed by Ashutosh</p>
+    </div>
+  </div>
+    <script>
+      var tablinks = document.getElementsByClassName("tab-links");
+      var tabcontents = document.getElementsByClassName("tab-contents");
+      function opentab(tabname) {
+        for (tablink of tablinks) {
+          tablink.classList.remove("active-link");
+        }
+        for (tabcontent of tabcontents) {
+          tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+      }
+    </script>
+    
+    <script>
+      var sidemenu = document.getElementById("sidemenu");
+      function openmenu(){
+        sidemenu.style.right = "0";
+      }
+      function closemenu(){
+        sidemenu.style.right = "-200px";
+      }
+    </script>
+<script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbwE5IojyATSAwEqr3wL1C51995ze6zzHY6nfpXT4DNWz-92ZOTokSJ92zrbS3wmQLNT/exec'
+  const form = document.forms['submit-to-google-sheet']
+  const msg = document.getElementById("msg")
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+    .then(response => {
+      msg.innerHTML = "Message send succesfully"
+      setTimeout(function(){
+        msg.innerHTML = ""
+      }, 5000)
+      form.reset()
+    })
+      .catch(error => console.error('Error!', error.message))
+  })
+</script>
+  </body>
+</html>
